@@ -55,4 +55,7 @@ func main() {
 
 	/* Ciclos */
 	iteraciones.Iterar()
+
+	/* Ejercicio 02 */
+	ejercicios.MultiplicarTabla()
 }
