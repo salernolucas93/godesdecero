@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/salernolucas93/godesdecero/ejercicios"
+	"github.com/salernolucas93/godesdecero/files"
 	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/variables"
 )
@@ -56,6 +57,11 @@ func main() {
 	/* Ciclos */
 	iteraciones.Iterar()
 
-	/* Ejercicio 02 */
-	ejercicios.MultiplicarTabla()
+	/* Ejercicio 02 (Modificado para MAnejo de Archivos) */
+	//fmt.Println(ejercicios.MultiplicarTabla())
+
+	//files.GrabarTabla()
+	//files.SumarTabla()
+
+	files.LeerArchivo()
 }
