@@ -37,11 +37,15 @@ func main() {
 	}
 
 	/* Ejercicio 01 */
-	numero, mensaje := ejercicios.Conversor("2000")
+	numero, mensaje := ejercicios.Conversor("2000") // Mayor
 	fmt.Println(numero)
 	fmt.Println(mensaje)
 
-	numero, mensaje = ejercicios.Conversor("50")
+	numero, mensaje = ejercicios.Conversor("50") //Menor
+	fmt.Println(numero)
+	fmt.Println(mensaje)
+
+	numero, mensaje = ejercicios.Conversor("aaaaa") // Manejo de Error
 	fmt.Println(numero)
 	fmt.Println(mensaje)
 }
