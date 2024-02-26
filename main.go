@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/salernolucas93/godesdecero/ejercicios"
+	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/variables"
 )
 
@@ -48,4 +49,10 @@ func main() {
 	numero, mensaje = ejercicios.Conversor("aaaaa") // Manejo de Error
 	fmt.Println(numero)
 	fmt.Println(mensaje)
+
+	/* Mostrar y Aceptar Datos */
+	//teclado.IngresoNumeros()
+
+	/* Ciclos */
+	iteraciones.Iterar()
 }
