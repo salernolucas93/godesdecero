@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/salernolucas93/godesdecero/arreglos_slices"
 	"github.com/salernolucas93/godesdecero/ejercicios"
 	"github.com/salernolucas93/godesdecero/files"
 	"github.com/salernolucas93/godesdecero/funciones"
@@ -72,4 +73,9 @@ func main() {
 
 	/* Recursion */
 	funciones.Exponencia(2)
+
+	/* Arreglos y Slices */
+	arreglos_slices.MostrarArreglos()
+	arreglos_slices.MostrarSlice()
+	arreglos_slices.Capacidad()
 }
