@@ -9,6 +9,7 @@ import (
 	"github.com/salernolucas93/godesdecero/files"
 	"github.com/salernolucas93/godesdecero/funciones"
 	"github.com/salernolucas93/godesdecero/iteraciones"
+	"github.com/salernolucas93/godesdecero/mapas"
 	"github.com/salernolucas93/godesdecero/variables"
 )
 
@@ -78,4 +79,7 @@ func main() {
 	arreglos_slices.MostrarArreglos()
 	arreglos_slices.MostrarSlice()
 	arreglos_slices.Capacidad()
+
+	/* Mapas */
+	mapas.MostrarMapas()
 }
