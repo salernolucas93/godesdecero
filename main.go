@@ -6,6 +6,7 @@ import (
 
 	"github.com/salernolucas93/godesdecero/ejercicios"
 	"github.com/salernolucas93/godesdecero/files"
+	"github.com/salernolucas93/godesdecero/funciones"
 	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/variables"
 )
@@ -64,4 +65,11 @@ func main() {
 	//files.SumarTabla()
 
 	files.LeerArchivo()
+
+	/* Funciones Anonimas y Closures */
+	//funciones.Calculos()
+	//funciones.LlamarClosure()
+
+	/* Recursion */
+	funciones.Exponencia(2)
 }
