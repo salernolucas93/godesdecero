@@ -9,13 +9,14 @@ import (
 	"github.com/salernolucas93/godesdecero/ejercicios"
 	"github.com/salernolucas93/godesdecero/files"
 	"github.com/salernolucas93/godesdecero/funciones"
-	"github.com/salernolucas93/godesdecero/goroutines"
 	e "github.com/salernolucas93/godesdecero/interfaces_impl"
 	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/mapas"
 	m "github.com/salernolucas93/godesdecero/modelos"
 	"github.com/salernolucas93/godesdecero/users"
 	"github.com/salernolucas93/godesdecero/variables"
+	"github.com/salernolucas93/godesdecero/webserver"
+	//"github.com/salernolucas93/godesdecero/goroutines"
 )
 
 func main() {
@@ -103,10 +104,13 @@ func main() {
 	//d.VerPanic()
 
 	/* GO Routines y Channels */
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLento("Lucas Salerno", canal1) // La instruccion "go" indica que esta instruccion se ejecutara de manera asincrona
-	defer func() {
-		<-canal1 // Awake - La ejecucion esperara a la asignacion del channel
-	}()
-	fmt.Println("Estoy aqui")
+	//canal1 := make(chan bool)
+	//go goroutines.MiNombreLento("Lucas Salerno", canal1) // La instruccion "go" indica que esta instruccion se ejecutara de manera asincrona
+	//defer func() {
+	//<-canal1 // Awake - La ejecucion esperara a la asignacion del channel
+	//}()
+	//fmt.Println("Estoy aqui")
+
+	/* Servidor Web */
+	webserver.MiWebServer()
 }
