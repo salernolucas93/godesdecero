@@ -10,6 +10,7 @@ import (
 	"github.com/salernolucas93/godesdecero/funciones"
 	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/mapas"
+	"github.com/salernolucas93/godesdecero/users"
 	"github.com/salernolucas93/godesdecero/variables"
 )
 
@@ -82,4 +83,7 @@ func main() {
 
 	/* Mapas */
 	mapas.MostrarMapas()
+
+	/* EStructuras */
+	users.AltaUsuario()
 }
