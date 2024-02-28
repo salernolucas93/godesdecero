@@ -25,3 +25,7 @@ func (hombre *Hombre) Comer() {
 func (hombre *Hombre) Sexo() string {
 	return "Hombre"
 }
+
+func (hombre *Hombre) EstaVivo() bool {
+	return true
+}

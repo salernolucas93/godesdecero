@@ -19,3 +19,7 @@ func (mujer *Mujer) Comiendo() {
 func (mujer *Mujer) Sexo() string {
 	return "Mujer"
 }
+
+func (mujer *Mujer) EstaVivo() bool {
+	return true
+}
