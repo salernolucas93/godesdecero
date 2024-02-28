@@ -12,10 +12,11 @@ import (
 	e "github.com/salernolucas93/godesdecero/interfaces_impl"
 	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/mapas"
+	"github.com/salernolucas93/godesdecero/middleware"
 	m "github.com/salernolucas93/godesdecero/modelos"
 	"github.com/salernolucas93/godesdecero/users"
 	"github.com/salernolucas93/godesdecero/variables"
-	"github.com/salernolucas93/godesdecero/webserver"
+	//"github.com/salernolucas93/godesdecero/webserver"
 	//"github.com/salernolucas93/godesdecero/goroutines"
 )
 
@@ -112,5 +113,8 @@ func main() {
 	//fmt.Println("Estoy aqui")
 
 	/* Servidor Web */
-	webserver.MiWebServer()
+	//webserver.MiWebServer()
+
+	/* Middleware */
+	middleware.MiMiddleware()
 }
