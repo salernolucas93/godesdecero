@@ -8,8 +8,10 @@ import (
 	"github.com/salernolucas93/godesdecero/ejercicios"
 	"github.com/salernolucas93/godesdecero/files"
 	"github.com/salernolucas93/godesdecero/funciones"
+	e "github.com/salernolucas93/godesdecero/interfaces_impl"
 	"github.com/salernolucas93/godesdecero/iteraciones"
 	"github.com/salernolucas93/godesdecero/mapas"
+	m "github.com/salernolucas93/godesdecero/modelos"
 	"github.com/salernolucas93/godesdecero/users"
 	"github.com/salernolucas93/godesdecero/variables"
 )
@@ -84,6 +86,13 @@ func main() {
 	/* Mapas */
 	mapas.MostrarMapas()
 
-	/* EStructuras */
+	/* Estructuras */
 	users.AltaUsuario()
+
+	/* Interfaces */
+	Pedro := new(m.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(m.Mujer)
+	e.HumanosRespirando(Maria)
 }
