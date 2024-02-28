@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/salernolucas93/godesdecero/arreglos_slices"
+	d "github.com/salernolucas93/godesdecero/defer_panic"
 	"github.com/salernolucas93/godesdecero/ejercicios"
 	"github.com/salernolucas93/godesdecero/files"
 	"github.com/salernolucas93/godesdecero/funciones"
@@ -95,4 +96,8 @@ func main() {
 
 	Maria := new(m.Mujer)
 	e.HumanosRespirando(Maria)
+
+	/* Defer - Panic */
+	d.VerDefer()
+	d.VerPanic()
 }
